@@ -1,15 +1,16 @@
+
 import React, { useState } from 'react';
-import { Layout } from './components/Layout';
-import { Welcome } from './components/Welcome';
-import { Login, LoginDestination } from './components/Login';
-import { Intro } from './components/Intro';
-import { Quiz } from './components/Quiz';
-import { MemoryGame } from './components/MemoryGame';
-import { ShooterGame } from './components/ShooterGame';
-import { LevelUp } from './components/LevelUp';
-import { Gacha } from './components/Gacha';
-import { KeepMemories } from './components/KeepMemories';
-import { Scene } from './types';
+import { Layout } from './components/Layout.tsx';
+import { Welcome } from './components/Welcome.tsx';
+import { Login, LoginDestination } from './components/Login.tsx';
+import { Intro } from './components/Intro.tsx';
+import { Quiz } from './components/Quiz.tsx';
+import { MemoryGame } from './components/MemoryGame.tsx';
+import { ShooterGame } from './components/ShooterGame.tsx';
+import { LevelUp } from './components/LevelUp.tsx';
+import { Gacha } from './components/Gacha.tsx';
+import { KeepMemories } from './components/KeepMemories.tsx';
+import { Scene } from './types.ts';
 
 function App() {
   const [scene, setScene] = useState<Scene>(Scene.WELCOME);

@@ -613,14 +613,14 @@ export const KeepMemories: React.FC<KeepMemoriesProps> = ({ onRestart, testMode 
 
                         {/* PREVIEW MODES (GIF Effect) / PRINTING */}
                         {(mode === 'PREVIEW_NORMAL' || mode === 'PREVIEW_PIXEL') && (
-                            <div className="absolute inset-0 w-full h-full bg-black">
+                            <div className="absolute inset-0 w-full h-full bg-black flex items-center justify-center p-2">
                                 {printingState !== 'DONE' && printingState !== 'NONE' ? (
                                     <div className="flex flex-col items-center justify-center h-full text-green-400 animate-pulse">
                                         <span className="text-3xl mb-2">🖨️</span>
                                         <span className="text-xs font-bold">PRINTING...</span>
                                     </div>
                                 ) : (
-                                    <>
+                                    <div className="pixel-border bg-white w-full h-full overflow-hidden relative">
                                         <img 
                                             src={mode === 'PREVIEW_PIXEL' ? pixelPhotos[currentFrameIndex] : photos[currentFrameIndex]}
                                             alt="Memory Frame"
@@ -631,7 +631,7 @@ export const KeepMemories: React.FC<KeepMemoriesProps> = ({ onRestart, testMode 
                                                 GIF PREVIEW
                                             </span>
                                         </div>
-                                    </>
+                                    </div>
                                 )}
                             </div>
                         )}

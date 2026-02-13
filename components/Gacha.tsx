@@ -1,5 +1,6 @@
+
 import React, { useState } from 'react';
-import { GachaItem } from '../types';
+import { GachaItem } from '../types.ts';
 
 interface GachaProps {
   onReset?: () => void;

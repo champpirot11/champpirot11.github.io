@@ -1,5 +1,6 @@
+
 import React, { useState, useEffect } from 'react';
-import { MemoryCard } from '../types';
+import { MemoryCard } from '../types.ts';
 
 interface MemoryGameProps {
   onComplete: () => void;
