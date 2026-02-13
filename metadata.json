@@ -1,0 +1,7 @@
+{
+  "name": "Valentine Quest 2024",
+  "description": "An 8-bit Retro Valentine's Day Game inspired by GameBoy aesthetics.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
